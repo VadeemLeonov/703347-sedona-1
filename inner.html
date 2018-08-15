@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Седона (inner)</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+	<header class="main-header">
+  		<nav class="main-navigation">  			
+  			<ul class="site-navigation">
+  				<li>
+  					<a href="info.html">информация</a>
+  				</li>
+  				<li>
+  					<a href="foto-video.html">фото и видео</a>
+  				</li>
+  				<li>
+  					<a href="main-page" class="main-header-logo">
+  						<img src="img/logo.png" width="140px" height="70px" alt="Логотип седоны">
+  					</a>
+  				</li>
+  				<li>
+  					<a href="map.html">карта штата</a>
+  				</li>
+  				<li>
+  					<a href="hotel.html">гостиницы</a>
+  				</li>
+  			</ul>
+  		</nav>
+  	</header>
+  	<main>
+  		<section class="hotel-settings">
+  			<h1 class="visually-hidden">требывания к отелю</h1>
+  			<form class="hotel-settings-form" action="https://echo.htmlacademy.ru" method="get">
+  				<fieldset class="infrastructure">
+  					<legend>инфраструктура</legend>
+  					<ul>
+  						<li class="infrastructure-option"> 							
+  							<input  class="visually-hidden infrastructure-input" type="checkbox" name="pool" id="pool" checked>
+  							<label for="pool">бассейн</label>
+  						</li>
+  						<li class="infrastructure-option">
+  							<input  class="visually-hidden infrastructure-input" type="checkbox" name="parking" id="parking">
+  							<label for="parking">парковка</label>
+  						</li>
+  						<li class="infrastructure-option">
+  							<input class="visually-hidden infrastructure-input" type="checkbox" name="wi-fi" id="wi-fi">
+  							<label for="wi-fi">wi-fi</label>
+  						</li>
+  					</ul> 					
+  				</fieldset>
+  				<fieldset class="dwelling-type">
+  					<legend>тип жилья</legend>
+  					<ul>
+  						<li class="dwelling-type-option">
+  							<input class="visually-hidden dwelling-type-input" type="checkbox" name="hotel" id="hotel" checked>
+  							<label for="hotel">гостиница</label>
+  						</li>
+  						<li class="dwelling-type-option">
+  							<input class="visually-hidden dwelling-type-input" type="checkbox" name="motel" id="motel" checked>
+  							<label for="motel">мотель</label>
+  						</li>
+  						<li class="dwelling-type-option">
+  							<input class="visually-hidden dwelling-type-input" type="checkbox" name="apartments" id="apartments" checked>
+  							<label for="apartments">апартаменты</label>
+  						</li>
+  					</ul>
+  				</fieldset>
+  				<div class="filter-range">
+  					<div class="filter-range-title">Стоимость в сутки (р):</div>
+  					<div class="price-controls">
+  						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+  						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+  					</div>
+  					<div class="range-controls">
+  						<div class="scale">
+  							<div class="bar"></div>
+  						</div>
+  						<div class="range-toggle range-toggle-min"></div>
+  						<div class="range-toggle range-toggle-max"></div>
+  					</div>
+  					<button class="btn-transparent" type="submit">Показать</button> 					
+  				</div>
+  			</form>
+  		</section>
+  		<div class="filter">
+  			<div class="output-settings-form">
+  				<h2>найдено:</h2>
+  				<output name="output-settings-form">3</output>
+  			</div>
+			<div class="sorting-group">
+				<h3>сортировка:</h3>
+				<ul class="sorting-option">
+					<li>
+						<a class="sorting-choice by-price" href="#">по цене:</a>
+					</li>
+					<li>
+						<a class="sorting-choice by-type" href="#">по типу</a>
+					</li>
+					<li>
+						<a class="sorting-choice by-rating" href="#">по рейтингу</a>
+					</li>
+				</ul>
+				<ul class="order-of-items">
+					<li>
+						<a class="order-ascending" href=#">по возрастанию</a>
+					</li>
+					<li>
+						<a class="order-descendingly" href="#">по убыванию</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+  		<section class="list-of-hotel">
+  			<ul>
+  				<li class="selected-hotels">
+  					<img src="img/result-hotel-amara.jpg" width="120" height="80" alt="гостиница amara resort & spa">
+  					<h2>amara resort & spa</h2>
+  					<span class="dwelling">гостиница</span>
+  					<span class="amount">от 4000 р.</span>
+  					<span class="rating">рейтинг:8,5</span>
+  					<ul>
+  						<li class="confirmation">
+  							<a class="hotelinfo-link" href="http://www.amararesort.com/sedona-hotel/">подробнее</a>
+  						</li>
+  						<li class="confirmation">
+  							<a class="hotel-link" href="http://www.amararesort.com/">забронировать</a>
+  						</li>
+  					</ul>
+  				</li>
+  				<li class="selected-hotels">
+  					<img src="img/result-hotel-desert.jpg" width="120" height="80" alt="мотель desert quail inn">
+  					<h2>desert quail inn</h2>
+  					<span class="dwelling">мотель</span>
+  					<span class="amount">от 3000 р.</span>
+  					<span class="rating">рейтинг:8,9</span>
+   					<ul>
+  						<li class="confirmation">
+  							<a class="hotelinfo-link" href="https://www.desertquailinn.com/">подробнее</a>
+  						</li>
+  						<li class="confirmation">
+  							<a class="hotel-link" href="https://book.webrez.com/v28/#/property/1636/location/0/roomResults">забронировать</a>
+  						</li>
+  					</ul>
+  				</li>
+  				<li class="selected-hotels">
+  					<img src="img/result-hotel-villas.jpg" width="120" height="80" alt="апартаменты villas at poco diablo">
+  					<h2>villas at poco diablo</h2>
+  					<span class="dwelling">апартаменты</span>
+  					<span class="amount">от 2000 р.</span>
+  					<span class="rating">рейтинг:9,2</span>
+   					<ul>
+  						<li class="confirmation">
+  							<a class="hotelinfo-link" href="https://villasatpocodiablo.com/villas/">подробнее</a>
+  						</li>
+  						<li class="confirmation">
+  							<a class="hotel-link" href="https://villasatpocodiablo.com/">забронировать</a>
+  						</li>
+  					</ul>
+  				</li>
+  			</ul>
+  		</section>  		
+  	</main>
+  	<footer class="main-footer">
+  		<p>
+  			<a href="https://visitsedona.com/" area-label="сайт седоны">#visitesedona</a>
+  		</p>
+  		<ul class="footer-social">
+  			<li>
+  				<a class="social-button" href="https://twitter.com/">
+  					<span class="visually-hidden">Твиттер</span>
+  					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+  					</svg>
+  				</a>
+  			</li>
+  			<li>
+  				<a class="social-button" href="https://ru-ru.facebook.com/">
+  					<span class="visually-hidden">Фейсбук</span>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+  					</svg>
+  				</a>
+  			</li>
+  			<li>
+  				<a class="social-button" href="https://www.youtube.com/">
+  					<span class="visually-hidden">Ютуб</span>
+  					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+  				</a>
+  			</li>
+  		</ul>
+  		<p class="footer-copyright">
+  			<span>website by</span>
+  			<a href="https://up.htmlacademy.ru/htmlcss/21">
+  				<img src="img/logo-htmlacademy.svg" width="125" height="25" alt="Логотип htmlacademy">
+  			</a>
+ 	 	</p>
+  	</footer>    
+  </body>
+</html>
