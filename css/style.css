@@ -167,6 +167,21 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 }
 
+.staying-option {
+  position: relative;
+  z-index: 5;
+
+  width: 564px;
+
+  background-color:  #ffffff;
+
+  box-shadow:  0 0 10px rgba(0,0,0,0.5);
+  margin: 0 auto;
+  margin-bottom: -210px;
+
+  animation: bounce 0.6s;
+}
+
 .staying-option-item input {
 	font: inherit;
 
@@ -232,7 +247,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-settings-form {
-	text-align: left;	
+	text-align: left;
 }
 
 .hotel-settings-form ul {
@@ -267,7 +282,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-option a:hover,
 .sorting-option a:focus {
-	color: #82b3d3;	
+	color: #82b3d3;
 }
 
 .sorting-option a:active {
@@ -362,7 +377,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 }
 
-/* ----- Сеточные стили -----*/ 
+/* ----- Сеточные стили -----*/
 
 .main-header-logo {
 	position: absolute;
@@ -383,10 +398,10 @@ input[type="radio"].visually-hidden {
 .site-navigation {
 	width: 100%;
 	min-height: 40px;
-	margin: 0 auto;	
+	margin: 0 auto;
 	padding-left: 70px;
 	padding-right: 70px;
-	
+
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
@@ -400,7 +415,7 @@ text-align: right;
 
 
 .site-navigation li {
-	
+
 	margin: 0;
 	padding-top: 0px;
 	padding-bottom: 15px;
@@ -553,10 +568,29 @@ text-align: right;
 
 .map {
 	position: relative;
+
 	max-width: 1200px;
 	margin: 0 auto;
 	margin-bottom: -120px;
 	padding: 0;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.map img {
+  max-height: 457px;
 }
 
 .hotel-settings-form {
@@ -831,7 +865,7 @@ text-align: right;
 
 .list-of-hotel {
 	max-width: 1200px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .list-of-hotel ul {
@@ -854,10 +888,11 @@ text-align: right;
 	position: absolute;
 	left: 0;
 	right: 0;
+  z-index: 3;
 
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 
 .visitesedona {
@@ -969,14 +1004,5 @@ text-align: right;
 	/*Всплывающая форма*/
 
 	.modal {
-		display: none;
-		position: fixed;
-		width: 564px;
-
-		background-color:  #ffffff;
-		box-shadow:  0 0 10px rgba(0,0,0,0.5);
-		margin: 0 auto;
-		margin-top: 137px;
-		padding-top: 30px;
-		padding-bottom: 30px;
 	}
+

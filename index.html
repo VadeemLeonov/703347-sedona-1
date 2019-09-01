@@ -12,7 +12,7 @@
   <nav class="main-navigation">
     <a href="#" class="main-header-logo">
       <img src="img/logo-sedona.svg" width="140px" height="70px" alt="Логотип седоны">
-    </a>  			
+    </a>
     <ul class="site-navigation">
       <li>
        <a href="info.html">информация</a>
@@ -44,8 +44,8 @@
   </section>
   <section class="about-the-town">
     <div class="present-town-row">
-     <div class="present-town">					
-      <h2>настоящий городок</h2>					
+     <div class="present-town">
+      <h2>настоящий городок</h2>
       <span>- №1 -</span>
       <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
     </div>
@@ -70,27 +70,27 @@
 <section class="attraction">
   <div class="devils-bridge-img">
   </div>
-  <div class="devils-bridge">  					
+  <div class="devils-bridge">
    <h2>там есть мост дьявола!</h2>
    <span>- №2 -</span>
    <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
- </div>		
+ </div>
 </section>
 <ul class="conveniences-list">
  <li class="conveniences">
    <h2>небольшая площадь</h2>
    <span>- №3 -</span>
-   <p>все достопримечательности находятся очень близко</p>				
+   <p>все достопримечательности находятся очень близко</p>
  </li>
  <li class="conveniences">
    <h2>красивая дорога</h2>
    <span>- №4 -</span>
-   <p>ехать в седону из лас-вегаса совсем не скучно!</p>				
+   <p>ехать в седону из лас-вегаса совсем не скучно!</p>
  </li>
  <li class="conveniences">
    <h2>мало туристов</h2>
    <span>- №5 -</span>
-   <p>большинство едет в гранд каньен и толпится там</p>				
+   <p>большинство едет в гранд каньен и толпится там</p>
  </li>
 </ul>
 </article>
@@ -119,12 +119,13 @@
     </p>
     <button class="button-sending-data" type="submit">найти</button>
   </form>
-</section> 
+</section>
 </section>
 <section class="map">
  <h3 class="visually-hidden">карта седоны</h3>
  <div>
-  <img src="img/map-image.jpg" width="100%" height="474px" alt="карта седоны">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d512871.3114090732!2d-112.08487505577298!3d34.87394899916246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1567282798975!5m2!1sru!2sru" width="100%" height="457" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <p><img src="img/map-image.jpg" width="100%" height="457" alt="карта седоны"></p>
 </div>
 </section>
 </main>
@@ -169,13 +170,13 @@
 
 
 var link = document.querySelector(".button-search-form");
-var popup = document.querySelector(".visually-hidden staying-option");
+var popup = document.querySelector(".staying-option");
 
-link.addEventListener("clikc", function (evt) {
+link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.toggle("modal");
+  popup.classList.toggle("visually-hidden");
 });
 
-</script>   
+</script>
 </body>
 </html>
